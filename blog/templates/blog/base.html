@@ -2,20 +2,50 @@
 
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Gilbut Eungyeong</title>
 
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="{% static "css/blog.css" %}">
         <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+        <style>
+            body {padding-top: 40px;
+            }
+
+        </style>
+        <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
     </head>
     <body>
-        <div class="page-header">
-            {% if user.is_authenticated %}
-            <a href="{% url "post_new" %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            {% endif %}
-            <h1><a href="/">Django Girls Blog</a></h1>
-    </div>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="/">test page</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="/">test1</a></li>
+                        <li><a href="/">test2</a></li>
+                        <li><a href="/">test3</a></li>
+                        <li><a href="/">test4</a></li>
+                        <li><a href="/">test5</a></li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+
     <div class="content container">
         <div class="row">
             <div class="col-md-8">

@@ -1,3 +1,8 @@
+.navbar-inner{
+    background-color: #000000;
+}
+
+
 .page-header {
     background-color: #ff9400;
     margin-top: 0;
@@ -5,8 +10,8 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
+    color: #000000;
+    font-size: 10pt;
     text-decoration: none;
 }
 
@@ -33,8 +38,7 @@ h1, h2, h3, h4 {
 
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
-    float: right;
-    font-size: 26pt;
+    font-size: 10pt;
     margin-right: 20px;
 }
 
@@ -44,4 +48,5 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
+    font-size: 10pt;
 }
