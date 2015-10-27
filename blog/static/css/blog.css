@@ -1,7 +1,4 @@
-.navbar-inner{
-    background-color: #000000;
-}
-
+hr { margin: 10px 0 10px 0; }
 
 .page-header {
     background-color: #ff9400;
@@ -24,6 +21,7 @@ h1, h2, h3, h4 {
 }
 
 .date {
+    font-size: 7pt;
     float: right;
     color: #828282;
 }

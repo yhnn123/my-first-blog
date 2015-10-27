@@ -3,11 +3,24 @@
 {% block content %}
     {% for post in posts %}
         <div class="post">
+
+            <a href="{% url "post_detail" pk=post.pk %}">
+            {% if post.title|length > 50 %}
+              <p>{{ post.title|slice:":50" }} ...</p>
+            {% else %}
+              <p>{{ post.title }}</p>
+            {% endif %}</a>
+
+
+            {% if post.text|length > 70 %}
+              <p>{{ post.text|slice:":70" }} ...</p>
+            {% else %}
+              <p>{{ post.text }}</p>
+            {% endif %}
+            <hr size="1">
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <a href="{% url "post_detail" pk=post.pk %}">{{ post.title }}</a>
-            <p>{{ post.text|linebreaks }}</p>
         </div>
     {% endfor %}
 {% endblock content %}
